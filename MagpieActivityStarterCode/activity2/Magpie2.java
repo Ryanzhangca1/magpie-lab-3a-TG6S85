@@ -58,7 +58,7 @@ public class Magpie2
 				|| statement.indexOf("Dr.") >= 0
 				|| statement.indexOf("Sir") >= 0)
 		{
-			response = "Are they well versed in their area of teaching?";
+			response = "Are they well versed in their area of teaching? It sounds like they are!";
 		}
 		// Teacher check, for EU as well!
 		else if (statement.indexOf("") >= 0)
