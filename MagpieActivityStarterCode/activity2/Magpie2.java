@@ -58,12 +58,7 @@ public class Magpie2
 		{
 			response = "Are they well versed in their area of teaching?";
 		}
-		else if (statement.indexOf("Mr.") >= 0
-				|| statement.indexOf("Miss.") >= 0
-				|| statement.indexOf("Madame") >= 0
-				|| statement.indexOf("Mrs.") >= 0
-				|| statement.indexOf("Dr.") >= 0
-				|| statement.indexOf("Sir") >= 0)
+		else if (statement.indexOf("") >= 0)
 		{
 			response = " Say something, please. ";
 		}
