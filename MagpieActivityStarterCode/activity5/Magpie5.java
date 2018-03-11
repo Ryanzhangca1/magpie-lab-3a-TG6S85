@@ -265,6 +265,13 @@ public class Magpie5
 			"Hmmm.",
 			"Do you really think so?",
 			"You don't say."
+			//additional
+			"Go on..."
+			"Are you sure?"
+			"ESKETIT"
+			"I get those goosebumps every time yeah"
+			"Continue good sir"
+			
 	};
 	
 }
