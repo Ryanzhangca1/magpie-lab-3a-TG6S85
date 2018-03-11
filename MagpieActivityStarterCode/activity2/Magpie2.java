@@ -42,6 +42,7 @@ public class Magpie2
 		{
 			response = "Tell me more about your family.";
 		}
+		// Family check
 		else if (statement.indexOf("dog") >= 0
 				|| statement.indexOf("cat") >= 0
 				|| statement.indexOf("fish") >= 0
@@ -49,6 +50,7 @@ public class Magpie2
 		{
 			response = "Tell me more about your pets.";
 		}
+		// Pet check, and goats?
 		else if (statement.indexOf("Mr.") >= 0
 				|| statement.indexOf("Miss.") >= 0
 				|| statement.indexOf("Madame") >= 0
@@ -58,10 +60,12 @@ public class Magpie2
 		{
 			response = "Are they well versed in their area of teaching?";
 		}
+		// Teacher check, for EU as well!
 		else if (statement.indexOf("") >= 0)
 		{
 			response = " Say something, please. ";
 		}
+		// Blank chack using trimmed string
 		else
 		{
 			response = getRandomResponse();
