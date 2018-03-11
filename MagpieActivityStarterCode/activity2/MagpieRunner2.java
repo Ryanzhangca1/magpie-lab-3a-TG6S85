@@ -18,7 +18,7 @@ public class MagpieRunner2
 		System.out.println (maggie.getGreeting());
 		Scanner in = new Scanner (System.in);
 		String statement = in.nextLine().trim();
-		
+		//Chaining functions, in -> nextLine() -> trim(), clearing our initial string of the spaces in front and back
 		
 		while (!statement.equals("Bye"))
 		{
