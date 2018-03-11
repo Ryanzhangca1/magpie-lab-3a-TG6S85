@@ -8,6 +8,11 @@
  * @author Laurie White
  * @version April 2012
  */
+
+public void doNothing (int dud) {
+	//does nothing
+}
+
 public class Magpie3
 {
 	/**
