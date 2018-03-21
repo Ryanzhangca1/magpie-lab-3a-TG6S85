@@ -39,7 +39,7 @@ public class Magpie3
 		{
 			response = "Why so negative?";
 		}
-		else if (statement.indexOf("mother") >= 0
+		else if (findKeyword("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
 				|| statement.indexOf("brother") >= 0)
@@ -47,7 +47,7 @@ public class Magpie3
 			response = "Tell me more about your family.";
 		}
 		// Family check
-		else if (statement.indexOf("dog") >= 0
+		else if (findKeyword("dog") >= 0
 				|| statement.indexOf("cat") >= 0
 				|| statement.indexOf("fish") >= 0
 				|| statement.indexOf("goat") >= 0)
@@ -55,7 +55,7 @@ public class Magpie3
 			response = "Tell me more about your pets.";
 		}
 		// Pet check, and goats?
-		else if (statement.indexOf("Mr.") >= 0
+		else if (findKeyword("Mr.") >= 0
 				|| statement.indexOf("Miss.") >= 0
 				|| statement.indexOf("Madame") >= 0
 				|| statement.indexOf("Mrs.") >= 0
@@ -65,7 +65,7 @@ public class Magpie3
 			response = "Are they well versed in their area of teaching? It sounds like they are!";
 		}
 		// Teacher check, for EU as well!
-		else if (statement.indexOf("") >= 0)
+		else if (findKeyword("") >= 0)
 		{
 			response = " Say something, please. ";
 		}
