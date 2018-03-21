@@ -79,11 +79,11 @@ public class Magpie2
 	 */
 	private String getRandomResponse()
 	{
-		final int NUMBER_OF_RESPONSES = 4;
+		final int NUMBER_OF_RESPONSES = 6;
 		double r = Math.random();
-		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
+		int whichResponse = (int) (r * NUMBER_OF_RESPONSES);
 		String response = "";
-		
+
 		if (whichResponse == 0)
 		{
 			response = "Interesting, tell me more.";
@@ -100,7 +100,13 @@ public class Magpie2
 		{
 			response = "You don't say.";
 		}
-
-		return response;
+		else if (whichResponse == 4)
+		{
+			response = "Elaborate PLS";
+		}
+		else if (whichResponse == 5)
+		{
+			response = "EXPAND ON THAT PLEASEEE";
+		}
 	}
 }
