@@ -35,21 +35,41 @@ public class Magpie3
 	public String getResponse(String statement)
 	{
 		String response = "";
-		if (statement.length() == 0)
-		{
-			response = "Say something, please.";
-		}
-		else if (findKeyword(statement, "no") >= 0)
+		if (statement.indexOf("no") >= 0)
 		{
 			response = "Why so negative?";
 		}
-		else if (findKeyword(statement, "mother") >= 0
-				|| findKeyword(statement, "father") >= 0
-				|| findKeyword(statement, "sister") >= 0
-				|| findKeyword(statement, "brother") >= 0)
+		else if (statement.indexOf("mother") >= 0
+				|| statement.indexOf("father") >= 0
+				|| statement.indexOf("sister") >= 0
+				|| statement.indexOf("brother") >= 0)
 		{
 			response = "Tell me more about your family.";
 		}
+		// Family check
+		else if (statement.indexOf("dog") >= 0
+				|| statement.indexOf("cat") >= 0
+				|| statement.indexOf("fish") >= 0
+				|| statement.indexOf("goat") >= 0)
+		{
+			response = "Tell me more about your pets.";
+		}
+		// Pet check, and goats?
+		else if (statement.indexOf("Mr.") >= 0
+				|| statement.indexOf("Miss.") >= 0
+				|| statement.indexOf("Madame") >= 0
+				|| statement.indexOf("Mrs.") >= 0
+				|| statement.indexOf("Dr.") >= 0
+				|| statement.indexOf("Sir") >= 0)
+		{
+			response = "Are they well versed in their area of teaching? It sounds like they are!";
+		}
+		// Teacher check, for EU as well!
+		else if (statement.indexOf("") >= 0)
+		{
+			response = " Say something, please. ";
+		}
+		// Blank chack using trimmed string
 		else
 		{
 			response = getRandomResponse();
