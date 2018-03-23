@@ -53,6 +53,12 @@ public class Magpie4
 		{
 			response = transformIWantToStatement(statement);
 		}
+		// I want
+		else if (findKeyword(statement, "I want", 0) >=0) {
+			response = transformIWantStatement(statement);
+		}
+		else if (findKeyword(statement, "I" + "you", 0) >=0) {
+			response = YouMeStatement(statement)
 
 		else
 		{
